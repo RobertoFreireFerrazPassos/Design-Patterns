@@ -25,7 +25,7 @@ The Template Method Pattern defines the skeleton of an algorithm in a method, de
 Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
 
 <p align="center">
-  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/images/templatemethod.png?raw=true">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
 </p>
 
 It uses **Hollywood Principle** which states, "Don't Call Us, We'll Call You.". It's closely related to the Dependency Inversion Principle.
