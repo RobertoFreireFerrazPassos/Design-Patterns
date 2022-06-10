@@ -22,6 +22,7 @@ ___________________________
 #### Template Method
 
 The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
+
 Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
 
 <p align="center">
@@ -29,6 +30,7 @@ Template Method lets subclasses redefine certain steps of an algorithm without c
 </p>
 
 It uses **Hollywood Principle** which states, "Don't Call Us, We'll Call You.". It's closely related to the Dependency Inversion Principle.
+
 The template method call the algorithm methods in the subclass, no the opposite.
 ___________________________ 
 
