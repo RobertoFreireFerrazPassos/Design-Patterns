@@ -1,4 +1,4 @@
-## Design-Patterns
+# Design-Patterns
 
 ___________________________
 
@@ -10,16 +10,24 @@ ___________________________
 
 ___________________________
 
-### Creational patterns
+## Creational patterns
 ___________________________
 
-### Structural patterns
+## Structural patterns
 
+### Decorator
+
+The Decorator Pattern attaches additional responsibilities to an object dynamically.
+Decorators provide a flexible alternative to subclassing for extending functionality.
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/decorator1.png?raw=true">
+</p>
 ___________________________
 
-### Behavioral patterns
+## Behavioral patterns
 
-#### Observer
+### Observer
 
 The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
@@ -27,24 +35,38 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer1.PNG?raw=true">
 </p>
 
-**Loosely Coupled Principle**
+**Identify the aspects of your application that vary and separate them from what stays the same.**
 ```
+The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers. 
+With this pattern, you can vary the objects that are dependent on the state of the Subject, without having to change that Subject. That’s called planning ahead!
+```
+
+**Program to an interface, not an implementation.**
+```
+Both the Subject and Observers use interfaces.
+
+Loosely Coupled Design.
 Strive for loosely coupled designs between objects that interact.
 Changes to either the subject or an observer will not affect the other.
 Any changes to either are possible as long as they implement the Subject and Observer interfaces.
 Before, the subject knew the implementation of the observers.
-We don’t need to make any changes to the subject to accommodate new classes (that implements observers).
+Now, We don’t need to make any changes to the subject to accommodate new classes (that implements observers).
 The subject doesn’t care, it will deliver notifications to any object that implements the
 Observer interface.
 ```
 
-Now, we can add/remove observers at runtime.
+**Favor composition over inheritance Principle**
+```
+The Observer Pattern uses composition to compose any number of Observers with their Subject.
+These relationships aren’t set up by some kind of inheritance hierarchy. No, they are set up at runtime by composition!
+We can add/remove observers at runtime.
+```
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer2.PNG?raw=true">
 </p>
 
-#### Template Method
+### Template Method
 
 The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
 
