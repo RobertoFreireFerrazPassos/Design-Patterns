@@ -1,6 +1,7 @@
 # Design-Patterns
 
-___________________________
+____________________________________
+
 
 **Creational patterns** provide object creation mechanisms that increase flexibility and reuse of existing code.
 
@@ -8,10 +9,16 @@ ___________________________
 
 **Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
 
-___________________________
+
+____________________________________
+
+
 
 ## Creational patterns
-___________________________
+
+
+____________________________________
+
 
 ## Structural patterns
 
@@ -23,7 +30,11 @@ Decorators provide a flexible alternative to subclassing for extending functiona
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/decorator1.png?raw=true">
 </p>
-___________________________
+
+
+____________________________________
+
+
 
 ## Behavioral patterns
 
@@ -82,7 +93,11 @@ Hollywood Principle which states: "Don't Call Us, We'll Call You."
 It's closely related to the Dependency Inversion Principle.
 The template method call the algorithm methods in the subclass, no the opposite.
 ```
-___________________________ 
+
+
+____________________________________ 
+
+
 
 References:
 
