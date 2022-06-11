@@ -46,13 +46,13 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer1.PNG?raw=true">
 </p>
 
-**Identify the aspects of your application that vary and separate them from what stays the same.**
+**Principle: Identify the aspects of your application that vary and separate them from what stays the same.**
 ```
 The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers. 
 With this pattern, you can vary the objects that are dependent on the state of the Subject, without having to change that Subject. That’s called planning ahead!
 ```
 
-**Program to an interface, not an implementation.**
+**Principle: Program to an interface, not an implementation.**
 ```
 Both the Subject and Observers use interfaces.
 
@@ -66,7 +66,7 @@ The subject doesn’t care, it will deliver notifications to any object that imp
 Observer interface.
 ```
 
-**Favor composition over inheritance Principle**
+**Principle: Favor composition over inheritance**
 ```
 The Observer Pattern uses composition to compose any number of Observers with their Subject.
 These relationships aren’t set up by some kind of inheritance hierarchy. No, they are set up at runtime by composition!
@@ -87,7 +87,7 @@ Template Method lets subclasses redefine certain steps of an algorithm without c
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
 </p>
 
-**Hollywood Principle**
+**Principle: Hollywood**
 ```
 Hollywood Principle which states: "Don't Call Us, We'll Call You." 
 It's closely related to the Dependency Inversion Principle.
