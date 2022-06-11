@@ -27,6 +27,18 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer1.PNG?raw=true">
 </p>
 
+**Loosely Coupled Principle**
+```
+Strive for loosely coupled designs between objects that interact.
+Changes to either the subject or an observer will not affect the other.
+Any changes to either are possible as long as they implement the Subject and Observer interfaces.
+Before, the subject knew the implementation of the observers.
+We don’t need to make any changes to the subject to accommodate new classes (that implements observers).
+The subject doesn’t care, it will deliver notifications to any object that implements the
+Observer interface.
+```
+
+Now, we can add/remove observers at runtime.
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer2.PNG?raw=true">
@@ -42,9 +54,12 @@ Template Method lets subclasses redefine certain steps of an algorithm without c
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
 </p>
 
-It uses **Hollywood Principle** which states, "Don't Call Us, We'll Call You.". It's closely related to the Dependency Inversion Principle.
-
+**Hollywood Principle**
+```
+Hollywood Principle which states: "Don't Call Us, We'll Call You." 
+It's closely related to the Dependency Inversion Principle.
 The template method call the algorithm methods in the subclass, no the opposite.
+```
 ___________________________ 
 
 References:
