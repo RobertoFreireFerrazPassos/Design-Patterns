@@ -19,6 +19,19 @@ ___________________________
 
 ### Behavioral patterns
 
+#### Observer
+
+The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer1.PNG?raw=true">
+</p>
+
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer2.PNG?raw=true">
+</p>
+
 #### Template Method
 
 The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
