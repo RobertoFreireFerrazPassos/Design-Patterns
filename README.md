@@ -27,10 +27,25 @@ ____________________________________
 The Decorator Pattern attaches additional responsibilities to an object dynamically.
 Decorators provide a flexible alternative to subclassing for extending functionality.
 
+Decorator is a **wrapper**. A wrapper is an object that can be linked with some target object. The wrapper contains the same set of methods as the target and delegates to it all requests it receives. However, the wrapper may alter the result by doing something either before or after it passes the request to the target.
+
+It uses composition to wrap the object and it uses inheritance to achieve the type matching.
+
+Using only inheritance, like in the code "before" example, we have code duplication.
+
+In the example, if we want a new ThincrustPizzaWithOlives, we need to create a duplication of class ThickcrustPizzaWithOlives with only difference that now, it inherits from ThincrustPizza instead of ThickcrustPizza. 
+
+With composition, we don't need to duplicate the logic for olives, we can have ThickcrustPizza, ThincrustPizza and the Olives (Decorator class) separately. Olives will wraps the pizza (ThickcrustPizza, ThincrustPizza,...) by composition and since it inherits Pizza through ToppingDecorator, it will also overide the pizza behaviors. So, we have flexibility by using composition.
+
+Composition is the key behind Decorator Pattern
+Composition is dynamic binding (run time binding). Composition allows late creation of the properties/fields until and unless they are not really required.
+It allows to add responsibilities to an object dynamically.
+It is a flexible alternative (comparing to inheritance) to subclassing for extending functionality.
+
+
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/decorator1.png?raw=true">
 </p>
-
 
 ____________________________________
 
@@ -47,13 +62,13 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
 </p>
 
 **Principle: Identify the aspects of your application that vary and separate them from what stays the same.**
-```
+
 The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers. 
 With this pattern, you can vary the objects that are dependent on the state of the Subject, without having to change that Subject. That’s called planning ahead!
-```
+
 
 **Principle: Program to an interface, not an implementation.**
-```
+
 Both the Subject and Observers use interfaces.
 
 Loosely Coupled Design.
@@ -64,14 +79,14 @@ Before, the subject knew the implementation of the observers.
 Now, We don’t need to make any changes to the subject to accommodate new classes (that implements observers).
 The subject doesn’t care, it will deliver notifications to any object that implements the
 Observer interface.
-```
+
 
 **Principle: Favor composition over inheritance**
-```
+
 The Observer Pattern uses composition to compose any number of Observers with their Subject.
 These relationships aren’t set up by some kind of inheritance hierarchy. No, they are set up at runtime by composition!
 We can add/remove observers at runtime.
-```
+
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer2.PNG?raw=true">
