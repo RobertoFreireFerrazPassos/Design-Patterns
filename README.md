@@ -37,7 +37,7 @@ In the example, if we want a new ThincrustPizzaWithOlives, we need to create a d
 
 With composition, we don't need to duplicate the logic for olives, we can have ThickcrustPizza, ThincrustPizza and the Olives (Decorator class) separately. Olives will wraps the pizza (ThickcrustPizza, ThincrustPizza,...) by composition and since it inherits Pizza through ToppingDecorator, it will also overide the pizza behaviors. So, we have flexibility by using composition.
 
-With Composition, we can use Cheese to add responsibilities to an ThickcrustPizza dynamically.
+With Composition, we can use Cheese to add responsibilities to ThickcrustPizza dynamically.
 
 
 <p align="center">
