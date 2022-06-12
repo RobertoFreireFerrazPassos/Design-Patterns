@@ -69,8 +69,6 @@ With this pattern, you can vary the objects that are dependent on the state of t
 **Principle: Program to an interface, not an implementation.**
 
 Both the Subject and Observers use interfaces.
-
-Loosely Coupled Design.
 Strive for loosely coupled designs between objects that interact.
 Changes to either the subject or an observer will not affect the other.
 Any changes to either are possible as long as they implement the Subject and Observer interfaces.
