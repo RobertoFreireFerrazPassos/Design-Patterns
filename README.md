@@ -37,10 +37,7 @@ In the example, if we want a new ThincrustPizzaWithOlives, we need to create a d
 
 With composition, we don't need to duplicate the logic for olives, we can have ThickcrustPizza, ThincrustPizza and the Olives (Decorator class) separately. Olives will wraps the pizza (ThickcrustPizza, ThincrustPizza,...) by composition and since it inherits Pizza through ToppingDecorator, it will also overide the pizza behaviors. So, we have flexibility by using composition.
 
-Composition is the key behind Decorator Pattern
-Composition is dynamic binding (run time binding). Composition allows late creation of the properties/fields until and unless they are not really required.
-It allows to add responsibilities to an object dynamically.
-It is a flexible alternative (comparing to inheritance) to subclassing for extending functionality.
+With Composition, we can use Cheese to add responsibilities to an ThickcrustPizza dynamically.
 
 
 <p align="center">
