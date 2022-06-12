@@ -29,11 +29,13 @@ Decorators provide a flexible alternative to subclassing for extending functiona
 
 Decorator is a **wrapper**. A wrapper is an object that can be linked with some target object. The wrapper contains the same set of methods as the target and delegates to it all requests it receives. However, the wrapper may alter the result by doing something either before or after it passes the request to the target.
 
+**Principle: Favor composition over inheritance**
+
 It uses composition to wrap the object and it uses inheritance to achieve the type matching.
 
 Using only inheritance, like in the code "before" example, we have code duplication.
 
-In the example, if we want a new ThincrustPizzaWithOlives, we need to create a duplication of class ThickcrustPizzaWithOlives with only difference that now, it inherits from ThincrustPizza instead of ThickcrustPizza. 
+In this example, if we want a new ThincrustPizzaWithOlives, we would have to to create a duplication of class ThickcrustPizzaWithOlives with only difference that it would inherits from ThincrustPizza instead of ThickcrustPizza. 
 
 With composition, we don't need to duplicate the logic for olives, we can have ThickcrustPizza, ThincrustPizza and the Olives (Decorator class) separately. Olives will wraps the pizza (ThickcrustPizza, ThincrustPizza,...) by composition and since it inherits Pizza through ToppingDecorator, it will also overide the pizza behaviors. So, we have flexibility by using composition.
 
@@ -95,16 +97,15 @@ The Template Method Pattern defines the skeleton of an algorithm in a method, de
 
 Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
 
+**Principle: Hollywood**
+
+"Don't Call Us, We'll Call You." 
+It's closely related to the Dependency Inversion Principle.
+The template method call the algorithm methods in the subclass, no the opposite.
+
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
 </p>
-
-**Principle: Hollywood**
-```
-Hollywood Principle which states: "Don't Call Us, We'll Call You." 
-It's closely related to the Dependency Inversion Principle.
-The template method call the algorithm methods in the subclass, no the opposite.
-```
 
 
 ____________________________________ 
