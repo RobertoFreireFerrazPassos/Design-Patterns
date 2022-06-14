@@ -2,6 +2,27 @@
 
 ____________________________________
 
+**Object-Oriented Principles**
+
+Encapsulate what varies.
+
+Favor composition over inheritance.
+
+Program to interfaces, not implementations.
+
+Strive for loosely coupled designs between objects that interact.
+
+Classes should be open for extension but closed for modification.
+
+Depend on abstractions. Do not depend on concrete classes.
+
+Only talk to your friends.
+
+Don’t call us, we’ll call you.
+
+A class should have only one reason to change.
+
+____________________________________
 
 **Creational patterns** provide object creation mechanisms that increase flexibility and reuse of existing code.
 
