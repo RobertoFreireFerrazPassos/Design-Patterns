@@ -30,9 +30,7 @@ ____________________________________
 
 **Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
 
-
 ____________________________________
-
 
 ## Creational patterns
 
@@ -41,6 +39,14 @@ ____________________________________
 The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. 
 
 Factory Method lets a class defer instantiation to subclasses.
+
+**Principle: Encapsulate what varies.**
+
+All the decision on creation of a pizza by style and type varies, so we did encapsulate this logic in the CreatePizza Method
+
+**Principle: Classes should be open for extension but closed for modification.**
+
+We used inheritance with PizzaStore, so everytime we add a new style of PizzaStore, we don't need to change the CreatePizza method. So, the CreatePizza method is closed for modification, but open for extension by its childs (ChicagoPizzaStore,NYPizzaStore,...)
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod1.png?raw=true">
@@ -98,7 +104,7 @@ The Observer Pattern defines a one-to-many dependency between objects so that wh
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer1.PNG?raw=true">
 </p>
 
-**Principle: Identify the aspects of your application that vary and separate them from what stays the same.**
+**Principle: Encapsulate what varies.**
 
 The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers. 
 With this pattern, you can vary the objects that are dependent on the state of the Subject, without having to change that Subject. That’s called planning ahead!
