@@ -48,6 +48,10 @@ All the decision on creation of a pizza by style and type varies, so we did enca
 
 We used inheritance with PizzaStore, so everytime we add a new style of PizzaStore, we don't need to change the CreatePizza method. So, the CreatePizza method is closed for modification, but open for extension by its childs (ChicagoPizzaStore,NYPizzaStore,...)
 
+**Depend on abstractions. Do not depend on concrete classes.**
+
+We are depending on the abstractions, Pizza (Product) and PizzaStore (Creator).
+
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod1.png?raw=true">
 </p>
