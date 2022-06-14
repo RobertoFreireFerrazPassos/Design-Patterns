@@ -34,9 +34,26 @@ ____________________________________
 ____________________________________
 
 
-
 ## Creational patterns
 
+### Factory Method
+
+The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. 
+
+Factory Method lets a class defer instantiation to subclasses.
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod1.png?raw=true">
+</p>
+
+
+### Abstract Factory
+
+Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod2.png?raw=true">
+</p>
 
 ____________________________________
 
