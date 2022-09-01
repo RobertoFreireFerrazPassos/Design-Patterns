@@ -103,6 +103,7 @@ The template method call the algorithm methods in the subclass, no the opposite.
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
 </p>
 </p></details>
+
 ____________________________________
 
 ## Creational patterns
@@ -141,6 +142,7 @@ Abstract Factory Pattern provides an interface for creating families of related 
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod2.png?raw=true">
 </p>
 </p></details>
+
 ____________________________________
 
 ## Structural patterns
