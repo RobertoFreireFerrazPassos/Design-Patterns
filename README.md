@@ -2,7 +2,9 @@
 
 ____________________________________
 
-**Object-Oriented Principles**
+<details>
+<summary style="font-size:14px">Object-Oriented Principles</summary>
+<p>
 
 Encapsulate what varies.
 
@@ -22,6 +24,8 @@ Don’t call us, we’ll call you.
 
 A class should have only one reason to change.
 
+</p></details>
+
 ____________________________________
 
 **Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
@@ -34,12 +38,16 @@ ____________________________________
 
 ## Behavioral patterns
 
-### Strategy
-
-**explicar o Strategy pattern explicando os principios até chegar na estrutura da pagina 60
+<details>
+<summary style="font-size:14px">Strategy</summary>
+<p>
+ **explicar o Strategy pattern explicando os principios até chegar na estrutura da pagina 60
 Explicar tb reuso por inheritance**
+</p></details>
 
-### Observer
+<details>
+<summary style="font-size:14px">Observer</summary>
+<p>
 
 The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
 
@@ -76,8 +84,11 @@ We can add/remove observers at runtime.
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer2.PNG?raw=true">
 </p>
 
-### Template Method
+</p></details>
 
+<details>
+<summary style="font-size:14px">Template Method</summary>
+<p>
 The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
 
 Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
@@ -91,13 +102,14 @@ The template method call the algorithm methods in the subclass, no the opposite.
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
 </p>
-
+</p></details>
 ____________________________________
 
 ## Creational patterns
 
-### Factory Method
-
+<details>
+<summary style="font-size:14px">Factory Method</summary>
+<p>
 The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. 
 
 Factory Method lets a class defer instantiation to subclasses.
@@ -117,23 +129,25 @@ We are depending on the abstractions, Pizza (Product) and PizzaStore (Creator).
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod1.png?raw=true">
 </p>
+</p></details>
 
-
-### Abstract Factory
+<details>
+<summary style="font-size:14px">Abstract Factory</summary>
+<p>
 
 Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod2.png?raw=true">
 </p>
-
+</p></details>
 ____________________________________
-
 
 ## Structural patterns
 
-### Decorator
-
+<details>
+<summary style="font-size:14px">Decorator</summary>
+<p>
 The Decorator Pattern attaches additional responsibilities to an object dynamically.
 Decorators provide a flexible alternative to subclassing for extending functionality.
 
@@ -155,6 +169,8 @@ With Composition, we can use Cheese to add responsibilities to ThickcrustPizza d
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/decorator1.png?raw=true">
 </p>
+
+</p></details>
 
 ____________________________________
 
