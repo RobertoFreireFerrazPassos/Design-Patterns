@@ -24,11 +24,73 @@ A class should have only one reason to change.
 
 ____________________________________
 
+**Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
+
 **Creational patterns** provide object creation mechanisms that increase flexibility and reuse of existing code.
 
 **Structural patterns** explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
 
-**Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
+____________________________________ 
+
+## Behavioral patterns
+
+### Strategy
+
+**explicar o Strategy pattern explicando os principios até chegar na estrutura da pagina 60
+Explicar tb reuso por inheritance**
+
+### Observer
+
+The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer1.PNG?raw=true">
+</p>
+
+**Principle: Encapsulate what varies.**
+
+The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers. 
+With this pattern, you can vary the objects that are dependent on the state of the Subject, without having to change that Subject. That’s called planning ahead!
+
+
+**Principle: Program to an interface, not an implementation.**
+
+Both the Subject and Observers use interfaces.
+Strive for loosely coupled designs between objects that interact.
+Changes to either the subject or an observer will not affect the other.
+Any changes to either are possible as long as they implement the Subject and Observer interfaces.
+Before, the subject knew the implementation of the observers.
+Now, We don’t need to make any changes to the subject to accommodate new classes (that implements observers).
+The subject doesn’t care, it will deliver notifications to any object that implements the
+Observer interface.
+
+
+**Principle: Favor composition over inheritance**
+
+The Observer Pattern uses composition to compose any number of Observers with their Subject.
+These relationships aren’t set up by some kind of inheritance hierarchy. No, they are set up at runtime by composition!
+We can add/remove observers at runtime.
+
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer2.PNG?raw=true">
+</p>
+
+### Template Method
+
+The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
+
+Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
+
+**Principle: Hollywood**
+
+"Don't Call Us, We'll Call You." 
+It's closely related to the Dependency Inversion Principle.
+The template method call the algorithm methods in the subclass, no the opposite.
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
+</p>
 
 ____________________________________
 
@@ -96,69 +158,7 @@ With Composition, we can use Cheese to add responsibilities to ThickcrustPizza d
 
 ____________________________________
 
-
-
-## Behavioral patterns
-
-### Observer
-
-The Observer Pattern defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
-
-<p align="center">
-  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer1.PNG?raw=true">
-</p>
-
-**Principle: Encapsulate what varies.**
-
-The thing that varies in the Observer Pattern is the state of the Subject and the number and types of Observers. 
-With this pattern, you can vary the objects that are dependent on the state of the Subject, without having to change that Subject. That’s called planning ahead!
-
-
-**Principle: Program to an interface, not an implementation.**
-
-Both the Subject and Observers use interfaces.
-Strive for loosely coupled designs between objects that interact.
-Changes to either the subject or an observer will not affect the other.
-Any changes to either are possible as long as they implement the Subject and Observer interfaces.
-Before, the subject knew the implementation of the observers.
-Now, We don’t need to make any changes to the subject to accommodate new classes (that implements observers).
-The subject doesn’t care, it will deliver notifications to any object that implements the
-Observer interface.
-
-
-**Principle: Favor composition over inheritance**
-
-The Observer Pattern uses composition to compose any number of Observers with their Subject.
-These relationships aren’t set up by some kind of inheritance hierarchy. No, they are set up at runtime by composition!
-We can add/remove observers at runtime.
-
-
-<p align="center">
-  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/observer2.PNG?raw=true">
-</p>
-
-### Template Method
-
-The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
-
-Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
-
-**Principle: Hollywood**
-
-"Don't Call Us, We'll Call You." 
-It's closely related to the Dependency Inversion Principle.
-The template method call the algorithm methods in the subclass, no the opposite.
-
-<p align="center">
-  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
-</p>
-
-
-____________________________________ 
-
-
-
-References:
+## References:
 
 https://refactoring.guru/design-patterns
 
