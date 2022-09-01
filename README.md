@@ -41,8 +41,10 @@ ____________________________________
 <details>
 <summary style="font-size:14px">Strategy</summary>
 <p>
+
  **explicar o Strategy pattern explicando os principios até chegar na estrutura da pagina 60
 Explicar tb reuso por inheritance**
+
 </p></details>
 
 <details>
@@ -89,6 +91,7 @@ We can add/remove observers at runtime.
 <details>
 <summary style="font-size:14px">Template Method</summary>
 <p>
+
 The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
 
 Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
@@ -102,6 +105,7 @@ The template method call the algorithm methods in the subclass, no the opposite.
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
 </p>
+
 </p></details>
 
 ____________________________________
@@ -111,6 +115,7 @@ ____________________________________
 <details>
 <summary style="font-size:14px">Factory Method</summary>
 <p>
+
 The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. 
 
 Factory Method lets a class defer instantiation to subclasses.
@@ -130,6 +135,7 @@ We are depending on the abstractions, Pizza (Product) and PizzaStore (Creator).
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod1.png?raw=true">
 </p>
+
 </p></details>
 
 <details>
@@ -150,6 +156,7 @@ ____________________________________
 <details>
 <summary style="font-size:14px">Decorator</summary>
 <p>
+
 The Decorator Pattern attaches additional responsibilities to an object dynamically.
 Decorators provide a flexible alternative to subclassing for extending functionality.
 
