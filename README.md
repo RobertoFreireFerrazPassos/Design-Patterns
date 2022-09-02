@@ -123,7 +123,7 @@ The Template Method Pattern defines the skeleton of an algorithm in a method, de
 It's closely related to the Dependency Inversion Principle.
 The template method call the algorithm methods in the subclass, no the opposite.
 
-For this design pattern, we favor **inheritance** over composition. We don't wanna flexibility in the template method. We wanna structure. The beverage subclasses must always have the same algorithm as a template. But, each subclass can define or redefine each primitive operation, depending on how the base class have defined the primitive operation (abstract, non-abstract or virtual) 
+For this design pattern, we **don't** favor composition over inheritance. We don't wanna flexibility in the template function. We wanna structure. The beverage subclasses must always follow the same algorithm provided in the base class as a template. But, each subclass can define or redefine each primitive operation, depending on how the base class have defined the primitive operations (abstract, non-abstract or virtual) 
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
