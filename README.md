@@ -175,7 +175,7 @@ It uses composition to wrap the object and it uses inheritance to achieve the ty
 
 Using only inheritance, like in the code "before" example, we have duplication regarding the code for decorating. In this example, if we want a new ThincrustPizzaWithOlives, we would have to to create a new subclass which is basically a duplication code of class ThickcrustPizzaWithOlives with only difference that it would inherits from ThincrustPizza instead of ThickcrustPizza. 
 
-By adding composition to this pattern, however, we don't need to duplicate the code logic for olives. We can have the ThickcrustPizza and ThincrustPizza (concrete components) and the Olives (concrete decorator) decoupled. Olives wraps the concrete component by composition, so it can dynamically access any concrete component.
+By adding composition to this pattern, however, we don't need to duplicate the code logic for olives. We can have the ThickcrustPizza and ThincrustPizza (concrete components) and the Olives (concrete decorator) decoupled. Olives wraps the concrete component by composition, so it can dynamically access any concrete component. So, composition gives flexibility because Olives can decorate any type of Pizza (component abstraction)
 
 But inheritance is still important. It will be used to make possible and in some cases mandatory to override the behavior in each concrete decorator. So, we can use Olives (concrete decorator) to add responsibilities to ThickcrustPizza (concrete component) dynamically.
 
