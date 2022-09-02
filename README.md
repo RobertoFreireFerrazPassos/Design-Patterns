@@ -139,13 +139,14 @@ We used inheritance with PizzaStore, so everytime we add a new style of PizzaSto
 
 **Dependency Inversion Principle: Depend on abstractions. Do not depend on concrete classes.**
 
-A “high-level” component is a class with behavior defined in terms of other, “low-level” components.
+ - High-level modules should not depend on low-level modules. Both should depend on abstractions.
+ - Abstractions should not depend on details. Details should depend on abstractions.
 
-For example, PizzaStore is a high-level component because its behavior is defined in terms of pizzas. It creates all the different pizza objects, and prepares, bakes, cuts, and boxes
-them, while the pizzas it uses are low-level components.
+So, the high-level module depends on the abstraction and the low-level depends on the same abstraction.
 
-- PizzaStore (Concrete Creator) depends only on Pizza (Product, abstract class);
-- The pizzas such as NYStyleCheesePizza, ChicagoStyleCheesePizza (concrete product) depends only on the abstract class Pizza (Product)
+In this example, PizzaStore is a high-level component because its behavior is defined in terms of pizzas.
+
+PizzaStore (Concrete Creator) depends only on the abstract class Pizza (Product) and the pizzas such as NYStyleCheesePizza, ChicagoStyleCheesePizza (concrete products) depends only on the same abstract class Pizza.
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod1.png?raw=true">
