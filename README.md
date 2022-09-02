@@ -191,13 +191,15 @@ Decorator is a **wrapper**. A wrapper is an object that can be linked with some 
 
 It uses composition to wrap the object and it uses inheritance to achieve the type matching.
 
-Using only inheritance, like in the code "before" example, we have code duplication.
+Using only inheritance, like in the code "before" example, we have duplication regarding the code for decorating. In this example, if we want a new ThincrustPizzaWithOlives, we would have to to create a new subclass which is basically a duplication code of class ThickcrustPizzaWithOlives with only difference that it would inherits from ThincrustPizza instead of ThickcrustPizza. 
 
-In this example, if we want a new ThincrustPizzaWithOlives, we would have to to create a duplication of class ThickcrustPizzaWithOlives with only difference that it would inherits from ThincrustPizza instead of ThickcrustPizza. 
+By adding composition to this pattern, however, we don't need to duplicate the code logic for olives. We can have the ThickcrustPizza and ThincrustPizza (concrete components) and the Olives (concrete decorator) decoupled. Olives wraps the concrete component by composition, so it can dynamically access any concrete component.
 
-With composition, we don't need to duplicate the logic for olives, we can have ThickcrustPizza, ThincrustPizza and the Olives (Decorator class) separately. Olives will wraps the pizza (ThickcrustPizza, ThincrustPizza,...) by composition and since it inherits Pizza through ToppingDecorator, it will also overide the pizza behaviors. So, we have flexibility by using composition.
+But inheritance is still important. It will be used to make possible and in some cases mandatory to override the behavior in each concrete decorator. So, we can use Olives (concrete decorator) to add responsibilities to ThickcrustPizza (concrete component) dynamically.
 
-With Composition, we can use Cheese to add responsibilities to ThickcrustPizza dynamically.
+So, this design pattern follows the open/closed principle (write code so that you will be able to add new functionality without changing the existing code. Software entities such as classes, modules and functions should be open for extension, but closed for modification). In the code "before" example, we had to change ThincrustPizzaWithOlives and ThickcrustPizzaWithOlives because both had some duplicated logic about olives behaviour.
+
+In short, inheritance give the structure to be possible and in some cases mandatory to override the behavior in each concrete decorator while composition give the flexibility to access the dynamic and decoupled instance of the concrete component.
 
 
 <p align="center">
