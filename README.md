@@ -163,6 +163,11 @@ Abstract Factory Pattern provides an interface for creating families of related 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod2.png?raw=true">
 </p>
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/abstractfactory1.png?raw=true">
+</p>
+
 </p></details>
 
 ## Structural patterns
