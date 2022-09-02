@@ -49,15 +49,15 @@ The Strategy Pattern defines a family of algorithms, encapsulates each one, and 
 - But, everytime we wanna implement a new duck, we must override the superclass method if we wanna remove/change a behaviour. Ex: a duck which it doesn't fly. Otherwise, a duck can have a behavior that it is not supposed to have. 
 - Also, the fly and quack behaviours of ducks can change. We don't wanna have to change in all subclasses that override a specific behaviour everytime it changes. Not reuse of code. 
 
-Also, we are gonna apply the **principle Encapsulate what varies.** (Take what varies and “encapsulate” it so it won’t affect the rest of your code. It is also good for reuse of code).
+Also, we are gonna apply the principle **Encapsulate what varies.** (Take what varies and “encapsulate” it so it won’t affect the rest of your code. It is also good for reuse of code).
 
-We are gonna apply the **principle Program to an interface, not an implementation.** (the Duck classes won’t need to know any of the implementation details for their own behaviors.)
+We are gonna apply the principle **Program to an interface, not an implementation.** (the Duck classes won’t need to know any of the implementation details for their own behaviors.)
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/strategy2.png?raw=true">
 </p>
 
-Also, we are gonna apply the **principle Favor composition over inheritance**
+Also, we are gonna apply the principle **Favor composition over inheritance** (Inheritance creates structure while composition creates flexibility)
 
 The HAS-A relationship is an interesting one: each duck has a FlyBehavior and a QuackBehavior to which it delegates flying and quacking. 
 
