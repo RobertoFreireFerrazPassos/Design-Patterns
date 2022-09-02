@@ -173,11 +173,11 @@ Decorator is a **wrapper**. A wrapper is an object that can be linked with some 
 
 It uses composition to wrap the object and it uses inheritance to achieve the type matching.
 
-Using only inheritance, like in the code "before" example, we have duplication regarding the code for decorating. In this example, if we want a new ThincrustPizzaWithOlives, we would have to to create a new subclass which is basically a duplication code of class ThickcrustPizzaWithOlives with only difference that it would inherits from ThincrustPizza instead of ThickcrustPizza. 
+Using only inheritance, like in the code "before" example, we have duplication regarding the code for decorating. In this example, if we want a new ThincrustPizzaWithOlives, we would have to implement a new subclass which is basically a duplication code of class ThickcrustPizzaWithOlives with only difference that it would inherits from ThincrustPizza instead of ThickcrustPizza. 
 
-By adding composition to this pattern, however, we don't need to duplicate the code logic for olives. We can have the ThickcrustPizza and ThincrustPizza (concrete components) and the Olives (concrete decorator) decoupled. Olives wraps the concrete component by composition, so it can dynamically access any concrete component. So, composition gives flexibility because Olives can decorate any type of Pizza (component abstraction)
+By adding composition to this pattern, however, we don't need to duplicate the code logic for olives. We can have the ThickcrustPizza and ThincrustPizza (concrete components) and the Olives (concrete decorator) decoupled. Olives wraps the concrete component by composition, so it can dynamically access any concrete component. So, composition gives flexibility because Olives can dynamically decorate any type of Pizza (component abstraction)
 
-But inheritance is still important. It will be used to make possible and in some cases mandatory to override the behavior in each concrete decorator. So, we can use Olives (concrete decorator) to add responsibilities to ThickcrustPizza (concrete component) dynamically.
+But inheritance is still important. It will be used to make possible and in some cases mandatory to override the behavior in each concrete decorator. So, Olives (concrete decorator) can attach additional responsibilities to the concrete component like ThickcrustPizza.
 
 So, this design pattern follows the open/closed principle (write code so that you will be able to add new functionality without changing the existing code. Software entities such as classes, modules and functions should be open for extension, but closed for modification). In the code "before" example, we had to change ThincrustPizzaWithOlives and ThickcrustPizzaWithOlives because both had some duplicated logic about olives behaviour.
 
