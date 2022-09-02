@@ -116,15 +116,14 @@ We can add/remove observers at runtime.
 <summary style="font-size:14px">Template Method</summary>
 <p>
 
-The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. 
+The Template Method Pattern defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
 
-Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm’s structure.
+**Principle: Hollywood - "Don't Call Us, We'll Call You."**
 
-**Principle: Hollywood**
-
-"Don't Call Us, We'll Call You." 
 It's closely related to the Dependency Inversion Principle.
 The template method call the algorithm methods in the subclass, no the opposite.
+
+For this design pattern, we favor **inheritance** over composition. We don't wanna flexibility in the template method. We wanna structure. The beverage subclasses must always have the same algorithm as a template. But, each subclass can define or redefine each primitive operation, depending on how the base class have defined the primitive operation (abstract, non-abstract or virtual) 
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/templatemethod.png?raw=true">
