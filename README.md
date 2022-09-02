@@ -146,7 +146,7 @@ So, the high-level module depends on the abstraction and the low-level depends o
 
 In this example, PizzaStore is a high-level component because its behavior is defined in terms of pizzas.
 
-PizzaStore (Concrete Creator) depends only on the abstract class Pizza (Product) and the pizzas such as NYStyleCheesePizza, ChicagoStyleCheesePizza (concrete products) depends only on the same abstract class Pizza.
+PizzaStore (Concrete Creator) depends on the abstract class Pizza (Product) and the pizzas such as NYStyleCheesePizza and ChicagoStyleCheesePizza (concrete products) depends on the same abstract class Pizza.
 
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/factorymethod1.png?raw=true">
