@@ -1,40 +1,26 @@
 # Design-Patterns
 
-____________________________________
-
 <details>
 <summary style="font-size:14px">Object-Oriented Principles</summary>
 <p>
 
-Encapsulate what varies.
-
-Favor composition over inheritance.
-
-Program to interfaces, not implementations.
-
-Strive for loosely coupled designs between objects that interact.
-
-Classes should be open for extension but closed for modification.
-
-Depend on abstractions. Do not depend on concrete classes.
-
-Only talk to your friends.
-
-Don’t call us, we’ll call you.
-
-A class should have only one reason to change.
+- Encapsulate what varies.
+- Favor composition over inheritance.
+- Program to interfaces, not implementations.
+- Strive for loosely coupled designs between objects that interact.
+- Classes should be open for extension but closed for modification.
+- Depend on abstractions. Do not depend on concrete classes.
+- Only talk to your friends.
+- Don’t call us, we’ll call you.
+- A class should have only one reason to change.
 
 </p></details>
-
-____________________________________
 
 **Behavioral patterns** take care of effective communication and the assignment of responsibilities between objects.
 
 **Creational patterns** provide object creation mechanisms that increase flexibility and reuse of existing code.
 
 **Structural patterns** explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient.
-
-____________________________________ 
 
 ## Behavioral patterns
 
@@ -133,8 +119,6 @@ For this design pattern, we **don't** favor composition over inheritance. We don
 
 </p></details>
 
-____________________________________
-
 ## Creational patterns
 
 <details>
@@ -174,8 +158,6 @@ Abstract Factory Pattern provides an interface for creating families of related 
 </p>
 </p></details>
 
-____________________________________
-
 ## Structural patterns
 
 <details>
@@ -207,8 +189,6 @@ In short, inheritance give the structure to be possible and in some cases mandat
 </p>
 
 </p></details>
-
-____________________________________
 
 ## References:
 
