@@ -170,6 +170,18 @@ Abstract Factory Pattern provides an interface for creating families of related 
 
 </p></details>
 
+<details>
+<summary style="font-size:14px">Singleton</summary>
+<p>
+
+Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+<p align="center">
+  <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/singleton1.png?raw=true">
+</p>
+
+</p></details>
+
 ## Structural patterns
 
 <details>
