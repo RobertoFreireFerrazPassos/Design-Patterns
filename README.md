@@ -176,11 +176,42 @@ Abstract Factory Pattern provides an interface for creating families of related 
 
 Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
 
-Note: In c#, use Lock in getInstance method to make thread-safe
-
 <p align="center">
   <img src="https://github.com/RobertoFreireFerrazPassos/Design-Patterns/blob/main/img/singleton1.png?raw=true">
 </p>
+
+Note: In c#, use Lock in GetInstance method to make thread-safe
+
+```cs
+// 'sealed' class to prevent class inheritance
+public sealed class Singleton
+{
+    private static Singleton instance = null;
+    private static readonly object padlock = new object();
+
+    // Explicit static constructor to tell C# compiler
+    // not to mark type as beforefieldinit
+    static Singleton() { }
+
+    // be private to prevent direct construction calls with the `new` operator.
+    private Singleton() { }
+
+    public static Singleton GetInstance
+    {
+        get
+        {
+            lock (padlock)
+            {
+                if (instance == null)
+                {
+                    instance = new Singleton();
+                }
+                return instance;
+            }
+        }
+    }
+}
+```
 
 </p></details>
 
@@ -219,5 +250,7 @@ In short, inheritance give the structure to be possible and in some cases mandat
 ## References:
 
 https://refactoring.guru/design-patterns
+
+https://csharpindepth.com/Articles/Singleton
 
 Book Head First Design Patterns: A Brain-Friendly Guide
